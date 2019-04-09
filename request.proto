@@ -59,6 +59,7 @@ message Request {
         StorageKey storage_key = 26;
         bool software_version = 27;
         bool peers_info = 28;
+        string transaction_receipt_ex = 29;
     }
 }
 
