@@ -15,6 +15,14 @@ message Call {
     string height = 4;
 }
 
+message Estimate {
+    bytes from = 1;
+    bytes to = 2;
+    bytes value = 3;
+    bytes data = 4;
+    string height = 5;
+}
+
 message StateProof {
     bytes address = 1;
     bytes position = 2;
@@ -60,6 +68,7 @@ message Request {
         bool software_version = 27;
         bool peers_info = 28;
         string transaction_receipt_ex = 29;
+        Estimate estimate_gas = 30;
     }
 }
 

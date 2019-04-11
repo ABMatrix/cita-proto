@@ -42,5 +42,6 @@ message Response {
         string software_version = 26;
         string peers_info = 27;
         string receipt_ex = 28;
+        bytes estimate_gas = 29;
     }
 }
